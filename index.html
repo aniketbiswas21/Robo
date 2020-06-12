@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <title>Voice Recognition using Javascript</title>
+    <style>
+      .talk {
+        padding: 15px 25px;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #6930c3;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+
+      .talk:hover {
+        background-color: #7400b8;
+      }
+
+      .talk:active {
+        background-color: #72efdd;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+    </style>
+  </head>
+  <body style="background-color: #48bfe3;">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lexend+Tera
+    "
+    />
+    <div
+      style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      "
+    >
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player
+        src="https://assets4.lottiefiles.com/packages/lf20_g1pduE.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px; margin: auto;"
+        loop
+        autoplay
+      ></lottie-player>
+
+      <h3 style="font-family: Lexend Tera; color: #5e60ce;">
+        Try saying how are you? or how is the weather?
+      </h3>
+      <div style="text-align: center;">
+        <button class="talk">Talk</button>
+      </div>
+      <h3
+        class="content"
+        style="font-family: Lexend Tera; color: #5e60ce;"
+      ></h3>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
